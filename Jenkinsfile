@@ -20,7 +20,7 @@ pipeline {
 				docker stop mywebsite-container || true
 				docker rm mywebsite-container || true
 
-				docker run -d --name mywebsite-container -p 8080:80 jenkinsweb
+				docker run -d --name mywebsite-container -p 8081:80 jenkinsweb
 				'''
 			}
 		}
